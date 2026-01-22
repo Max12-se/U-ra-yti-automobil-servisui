@@ -1,1 +1,1 @@
-# U-ra-yti-automobil-servisui
+automobil-servisui
