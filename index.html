@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+publicKey: "pb2k46U32EeqcGm0E",
+      });
+   })();
+</script>
+<script src="script.js"></script>
+</head>
+
+<body>
+      <div class="container">
+        <h1>Rejestracja do serwisu</h1>
+        <p>Użyj poniższego formularza, aby zapisać samochód do serwisu.</p>
+        
+        <form method="POST" action="https://formsubmit.co/maxgamer.star@gmail.com">
+            <label for="imie_nazwisko">Imię i nazwisko:</label>
+            <input type="text" id="imie_nazwisko" name="imie_nazwisko" required>
+
+            <label for="email">Adres e-mail (klienta):</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="data_wizyty">Preferowana data wizyty:</label>
+            <input type="date" id="data_wizyty" name="data_wizyty" required>
+
+            <label for="godzina_wizyty">Preferowana godzina wizyty:</label>
+            <input type="time" id="godzina_wizyty" name="godzina_wizyty" required>
+
+            <label for="numer_rejestracyjny">Numer rejestracyjny:</label>
+            <input type="text" id="numer_rejestracyjny" name="numer_rejestracyjny" required>
+
+            <fieldset>
+                <legend> **Wybierz rodzaj usługi (litewskie nazwy):** </legend>
+                
+                <input type="checkbox" id="u1" name="uslugi[]" value="Periodinis aptarnavimas">
+                <label for="u1"> Periodinis aptarnavimas</label><br>
+
+                <input type="checkbox" id="u2" name="uslugi[]" value="Važiuoklės patikra">
+                <label for="u2"> Važiuoklės patikra</label><br>
+
+                <input type="checkbox" id="u3" name="uslugi[]" value="Variklio ir elektros sistemų diagnostika">
+                <label for="u3"> Variklio ir elektros sistemų diagnostika</label><br>
+                
+                <input type="checkbox" id="u4" name="uslugi[]" value="Automobilio patikra prieš pirkimą">
+                <label for="u4"> Automobilio patikra prieš pirkimą</label><br>
+
+                <input type="checkbox" id="u5" name="uslugi[]" value="Ratų keitimas, montavimas">
+                <label for="u5"> Ratų keitimas, montavimas</label><br>
+
+                <input type="checkbox" id="u6" name="uslugi[]" value="Draudiminis įvykis, kėbulo remontas">
+                <label for="u6"> Draudiminis įvykis, kėbulo remontas</label><br>
+
+                <input type="checkbox" id="u7" name="uslugi[]" value="Kiti darbai">
+                <label for="u7"> Kiti darbai</label><br>
+            </fieldset>
+
+            <label for="opis_prac">Krótki opis prac:</label>
+            <textarea id="opis_prac" name="opis_prac" rows="4" required></textarea>
+
+            <button type="submit">Wyślij zgłoszenie</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

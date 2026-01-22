@@ -1,0 +1,90 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 480px;
+}
+
+h1, p {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Styl dla wszystkich inputów tekstowych, textarea, select i buttonów */
+input, 
+input[type="email"], 
+input[type="date"], 
+input[type="time"], 
+textarea, 
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ważne dla poprawnego rozmiaru pól */
+}
+
+/* Styl dla checkboxów i ich etykiet (aby były w jednej linii) */
+input[type="checkbox"] {
+    width: auto; /* Checkbox ma być mały */
+    margin-right: 10px;
+    vertical-align: middle;
+}
+label[for] {
+    display: inline; /* Etykiety checkboxów obok nich */
+    font-weight: normal;
+    margin-top: 0;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.success, .error {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.success { background-color: #d4edda; color: #155724; }
+.error { background-color: #f8d7da; color: #721c24; }
