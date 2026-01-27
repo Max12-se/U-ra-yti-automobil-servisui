@@ -1,4 +1,14 @@
 body {
+    background-image: url("Emilis.jpg");
+    background-size: cover;      /* wypełnia cały ekran */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+
+body {
     font-family: sans-serif;
     background-color: #f4f4f4;
     display: flex;

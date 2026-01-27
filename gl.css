@@ -1,0 +1,106 @@
+/* Bendri stiliai */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;     /* <-- Ustawiamy konkretny, MAŁY rozmiar czcionki, np. 18px */
+}
+
+.logo-icon {
+    height: 1em;         /* <-- Teraz 1em będzie równe 18px */
+    width: auto;
+    vertical-align: middle;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Antraštė ir Navigacija */
+header {
+    background-color: #f8f8f8;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.logo span {
+    color: #e31e24;
+}
+
+.top-contact span {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.btn-red {
+    background-color: #e31e24;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-red:hover {
+    background-color: #b3161a;
+}
+
+nav {
+    background-color: #2c3e50;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 15px 25px;
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #34495e;
+    color: #e31e24;
+}
+
+.kontener-zdjec img {
+  width: 100%;   
+  max-width: 400px; 
+  height: auto;
+}
+

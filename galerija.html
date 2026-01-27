@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobilių servisas - Emilis</title>
+    <link rel="stylesheet" href="gl.css">
+    <link rel="icon" type="image/jpg" href="Emilis.jpg">
+<head>
+<style>
+  /* Kontener dla całej galerii */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-areas: (2, auto);    /* 2 rzędy */
+    gap: 10px;                             /* Odstępy między zdjęciami */
+    padding: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  /* Styl dla zdjęć */
+  .gallery-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; 
+  }
+</style>
+</head>
+<body>
+
+    <header>
+         <div class="top-bar">
+          <div class="logo">
+        <img src="Emilis.jpg" alt="Logo" class="logo-icon"> <!-- Użyj znacznika <img> -->
+        Emilis <span></span>
+    </div>
+            <div class="top-contact">
+                <span>Tel: 065874999</span>
+                <a href="https://luminous-flan-f5b436.netlify.app/" class="btn-red">REZERVUOTI VIZITĄ</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Pagrindinis</a></li>
+                <li><a href="apie.html">Apie mus</a></li>
+                <li><a href="index.html">Paslaugos</a></li>
+                <li><a href="galerija.html" class="active">Galerija</a></li>
+                <li><a href="index.html">Kontaktai</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="gallery-grid">
+  <!-- Rząd 1 -->
+  <img src="zdj1.jpg">
+  <img src="zdj2.jpg">
+  <img src="zdj3.jpg">
+  <img src="zdj6.jpg">
+   <img src="zdj9.jpg">
+  <img src="zdj11.jpg">
+  <img src="zdj16.jpg">
+  <img src="zdj20.jpg">
+  <img src="zdj23.jpg">
+  
+</div> 
+  <!-- Rząd 2 -->
+   <div class="kontener-zdjec">
+    <img src="zdj4.jpg">
+  <img src="zdj5.jpg">
+  <img src="zdj7.jpg">
+  <img src="zdj8.jpg">
+  <img src="zdj10.jpg">
+</div>
+
+
+</body>
+</html>
